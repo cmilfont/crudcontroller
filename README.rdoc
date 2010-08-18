@@ -1,0 +1,16 @@
+environment.rb
+config.gem 'crudcontroller', :lib => 'crudcontroller', :version => '=0.1.2'
+
+application_controller.rb
+class ApplicationController < ActionController::Base
+  include CrudController
+end
+
+Yours controllers
+
+class TesteController < ApplicationController
+
+  generate_for :teste
+
+end
+
